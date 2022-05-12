@@ -1,0 +1,79 @@
+/* Dropdown Menu */
+
+.dropdown {
+    position: absolute;
+    top: 58px;
+    width: 300px;
+    transform: translateX(-45%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+  }
+  
+  .menu {
+    width: 100%;
+  }
+  
+  .menuItems {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-radius: var(--border-radius);
+    transition: background var(--speed);
+    padding: 0.5rem;
+  }
+  
+  .menuItems .iconsBtn {
+    margin-right: 0.5rem;
+  }
+  
+  
+  .menuItems .iconsBtn:hover {
+    filter: none;
+  }
+  
+  .menuItems:hover {
+    background-color: #525357;
+  }
+  
+  .iconsRight {
+    margin-left: auto;
+  }
+  
+  /* CSSTransition classes  */
+  .primary-menu-enter {
+    position: absolute;
+    transform: translateX(-110%);
+  }
+  .primary-menu-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+  }
+  .primary-menu-exit {
+    position: absolute;
+  }
+  .primary-menu-exit-active {
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
+  }
+  
+  
+  .secondary-menu-enter {
+    transform: translateX(110%);
+  }
+  .secondary-menu-enter-active {
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+  }
+  .secondary-menu-exit {
+    transform: translateX(-110%);
+    transition: all var(--speed) ease;
+  }
+  .secondary-menu-exit-active {
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
+  }
+  
