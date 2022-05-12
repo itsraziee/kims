@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import * as FaIcons from "react-icons/fa";
-import * as FiIcons from "react-icons/fi";
 import NavbarItems from "./components/NavbarItems.js";
 import NavigationBar from "./components/NavigationBar.js";
 import DropdownMenu from "./components/DropdownMenu.js";
@@ -11,7 +10,7 @@ function App() {
     <NavigationBar>
       <NavbarItems icon={<FaIcons.FaSearch />} />
       <NavbarItems icon={<FaIcons.FaBell />} />
-      <NavbarItems icon={<FiIcons.FiMenu />}>
+      <NavbarItems icon={<FaIcons.FaCaretDown />}>
         <DropdownMenu></DropdownMenu>
       </NavbarItems>
     </NavigationBar>

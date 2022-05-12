@@ -1,3 +1,8 @@
+a {
+  color: var(--icons-color);
+  text-decoration: none;;
+}
+
 /* <li> */
 .navbar-items {
     width: calc(var(--nav-size) * 0.8);
@@ -11,7 +16,7 @@
     --button-size: calc(var(--nav-size) * 0.5);
     width: var(--button-size);
     height: var(--button-size);
-    background-color: #B667F1;
+    background-color: #F0C38E;
     border-radius: 50%;
     padding: 5px;
     margin: 2px;
@@ -19,14 +24,15 @@
     align-items: center;
     justify-content: center;
     transition: filter 300ms;
+    
   }
   
   .iconsBtn:hover {
     filter: brightness(1.2);
   }
   
-  .iconsBtn FaIcons { 
-    fill: var(--text-color);
+  .iconsBtn svg { 
+    fill: var(--icons-color);
     width: 20px;
     height: 20px;
   }

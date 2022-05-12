@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { CSSTransition } from "react-transition-group";
 import "../styles/DropdownMenu.css";
+import { CSSTransition } from "react-transition-group";
 import * as AiIcons from "react-icons/ai";
 import * as FaIcons from "react-icons/fa";
 import * as RiIcons from "react-icons/ri";
@@ -72,9 +72,6 @@ function DropdownMenu() {
           </DropdownItems>
           <DropdownItems leftIcon={<MdIcons.MdDataExploration />}>
             Demographics
-          </DropdownItems>
-          <DropdownItems leftIcon={<MdIcons.MdAnnouncement />}>
-            Announcements
           </DropdownItems>
           <DropdownItems leftIcon={<IoIcons.IoIosPeople />}>
             Officials
